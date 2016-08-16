@@ -16,6 +16,7 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	
+	<script type='text/javascript' src='js/tweets.js'></script>
 	<script type="text/javascript" src="js/variables.js"></script>
 	<script type='text/javascript' src='js/tweetModule.js'></script>
 	<script type='text/javascript' src='js/tweetController.js'></script>
@@ -23,37 +24,7 @@
 	<script type="text/javascript" src="js/clintonController.js"></script>
 
 </head>
-<body ng-controller="tweetController">
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menuOptions" aria-expanded="false">
-					<span class="sr-only">Toggle Navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href='#'>Live Tweets</a>
-			</div>
-			<div class="nav navbar-nav">
-				<ul class="nav navbar-nav navbar-center">
-					<li><a href="#">See me?</a></li>
-				</ul>
-			</div>
-			<div class="collapse navbar-collapse" id="menuOptions">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#/">Home</a></li>
-					<li><a href="#/trump">Trump</a></li>
-					<li><a href="#/clinton">Clinton</a></li>
-				</ul>
-			</div>
-		</div>
-		 
-	</nav>
-	<div class="wrapper">
-		<div ng-view>
-			{{test}}
-		</div>	
-	</div>
+<body ng-style="" ng-controller="tweetController">
+	<div ng-view></div>
 </body>
 </html>

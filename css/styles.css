@@ -1,24 +1,91 @@
-/* line 27, ../compass/sass/styles.scss */
-.wrapper {
-  margin-top: 55px;
+/* line 23, ../compass/sass/styles.scss */
+body .layout {
+  background-image: url("http://s3.amazonaws.com/libapps/accounts/57039/images/usa.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+  background-position: center 120px;
 }
-
-/* line 31, ../compass/sass/styles.scss */
-.tweet-wrapper {
-  height: 100px;
-  width: 50%;
-  background-color: white;
-  margin: 2% 25%;
+/* line 30, ../compass/sass/styles.scss */
+body .republican {
+  background-color: #990202 !important;
+  border: 1px solid #990202 !important;
 }
-/* line 36, ../compass/sass/styles.scss */
-.tweet-wrapper .handle {
-  display: inline-block;
+/* line 34, ../compass/sass/styles.scss */
+body .democrat {
+  background-color: #1330B7 !important;
+  border: 1px solid #1330B7 !important;
 }
 /* line 38, ../compass/sass/styles.scss */
-.tweet-wrapper .handle p {
-  display: inline-block;
+body .white {
+  background-color: #FFFFFF !important;
+  border: 1px solid #FFFFFF !important;
+  border-radius: 5px;
 }
-/* line 42, ../compass/sass/styles.scss */
-.tweet-wrapper .message {
-  display: inline-block;
+/* line 43, ../compass/sass/styles.scss */
+body .buffer {
+  margin-right: 20px;
+}
+/* line 46, ../compass/sass/styles.scss */
+body h1 {
+  padding-bottom: 20px;
+}
+/* line 50, ../compass/sass/styles.scss */
+body .pushing {
+  margin-left: 33%;
+}
+/* line 53, ../compass/sass/styles.scss */
+body .allOfIt {
+  width: 100%;
+  border-bottom: 1px solid #333;
+  box-shadow: 0px 5px 10px -3px rgba(0, 0, 0, 0.6);
+}
+/* line 58, ../compass/sass/styles.scss */
+body .fixed {
+  position: fixed;
+  top: 51px;
+  z-index: 1030;
+}
+/* line 62, ../compass/sass/styles.scss */
+body .fixed.current {
+  margin-top: 124px;
+}
+/* line 66, ../compass/sass/styles.scss */
+body .fixed-right {
+  position: fixed;
+  top: 51px;
+  right: 0;
+  z-index: 1030;
+}
+/* line 71, ../compass/sass/styles.scss */
+body .fixed-right.current {
+  margin-top: 124px;
+}
+/* line 75, ../compass/sass/styles.scss */
+body .wrapper {
+  margin: 86px 10px 0px 10px;
+}
+/* line 79, ../compass/sass/styles.scss */
+body .tweet-buffer {
+  margin-bottom: 18px;
+}
+/* line 82, ../compass/sass/styles.scss */
+body .tweet-wrapper {
+  background-color: #eee;
+  border: 1px solid #e3e3e3;
+  padding: 20px;
+  border-radius: 6px;
+}
+/* line 87, ../compass/sass/styles.scss */
+body .tweet-wrapper img {
+  border-radius: 25%;
+}
+/* line 91, ../compass/sass/styles.scss */
+body .tweet-text {
+  margin-top: 10px;
+  font-size: 18px;
+}
+/* line 95, ../compass/sass/styles.scss */
+body .username-text {
+  margin-left: 5px;
 }

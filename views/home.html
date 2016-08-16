@@ -1,0 +1,57 @@
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menuOptions" aria-expanded="false">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href='#'>Live Tweets</a>
+			</div>
+			<form class="navbar-form navbar-left pushing">
+				<div class="form-group">
+					<input type="text" class="form-control"  ng-model="userInput" placeholder="Search Tweets">
+				</div>
+				<button type="submit" ng-click="userSearch()" class="btn btn-default">Submit</button>
+			</form>
+			<div class="collapse navbar-collapse" id="menuOptions">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#/">Home</a></li>
+					<li><a href="#/trump">Trump</a></li>
+					<li><a href="#/clinton">Clinton</a></li>
+				</ul>
+			</div>
+		</div>
+		 
+	</nav>
+	<div class="white fixed text-center allOfIt">
+		<h1>Live Tweets</h1>
+	</div>
+	<div class="container-fluid layout">
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="col-md-3 white fixed current text-center">
+						<h4>Current Search</h4>
+						<div class="col-md-12"><span><h5>'{{searching}}'</h5></span></div>
+					</div>
+				</div>
+				<div class="col-md-6 wrapper">
+					<div class="tweet-wrapper tweet-buffer republican" ng-repeat='tweet in tweets'>
+						<div class="tweet-wrapper white">
+							<img ng-src="{{tweet.user.profile_image_url}}"><span class="username-text">{{tweet.user.screen_name}}</span>
+							<p class="tweet-text">{{tweet.text}}</p><br />
+							<span>{{tweet.created_at}}</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="col-md-3 white fixed-right current text-center">
+						<h4>Recent Searches</h4>
+						<div class="col-md-12" ng-repeat="search in lookup track by $index"><span><h5>'{{search}}'<span><a href="" ng-click="removeItem($index)">x</a></span></h5></span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>

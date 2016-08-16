@@ -1,3 +1,3 @@
-tweetApp.controller('homeController', function($scope, $http){
+tweetApp.controller('homeController', function($scope, $http, myFactory){
 	$scope.test = "hello";
 })
