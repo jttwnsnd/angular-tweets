@@ -1,0 +1,24 @@
+/* line 27, ../compass/sass/styles.scss */
+.wrapper {
+  margin-top: 55px;
+}
+
+/* line 31, ../compass/sass/styles.scss */
+.tweet-wrapper {
+  height: 100px;
+  width: 50%;
+  background-color: white;
+  margin: 2% 25%;
+}
+/* line 36, ../compass/sass/styles.scss */
+.tweet-wrapper .handle {
+  display: inline-block;
+}
+/* line 38, ../compass/sass/styles.scss */
+.tweet-wrapper .handle p {
+  display: inline-block;
+}
+/* line 42, ../compass/sass/styles.scss */
+.tweet-wrapper .message {
+  display: inline-block;
+}
