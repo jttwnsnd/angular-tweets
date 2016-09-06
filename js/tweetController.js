@@ -1,14 +1,14 @@
-tweetApp.controller('tweetController', function($scope, $http, $location, $routeParams, myFactory){
+tweetApp.controller('tweetController', function($scope, $http, $location, $routeParams, $mdDialog, $mdMedia, myFactory){
 	console.log($scope);
 
 	$scope.userSearch = function(){
 		console.log('hi');
 	}
 	// console.log($routeParams);
-
 	if($routeParams.searchTerm){
 		var searchTerm = $routeParams.searchTerm;
 	}else{
+		console.log($routeParams.searchTerm);
 		var searchTerm = 'trump';
 	}
 	$scope.searching = searchTerm;
@@ -19,7 +19,7 @@ tweetApp.controller('tweetController', function($scope, $http, $location, $route
 	}).then(
 		function successFunction(tweetData){
 			$scope.tweets = tweetData.data.statuses;
-			console.log(tweetData);
+			recentSearch.unshift(searchTerm);
 		},function failureFunction(tweetData){
 			console.log(tweetData);
 		}
@@ -42,7 +42,6 @@ tweetApp.controller('tweetController', function($scope, $http, $location, $route
 		function successFunction(tweetData){
 			$scope.tweets = tweetData.data.statuses;
 			recentSearch.unshift(searchTerm);
-			console.log(tweetData);
 		},function failureFunction(tweetData){
 			console.log(tweetData);
 			}
