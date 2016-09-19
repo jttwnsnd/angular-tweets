@@ -105,43 +105,40 @@ body .wrapper {
   text-align: center;
 }
 /* line 113, ../compass/sass/styles.scss */
+body .side-wrapper {
+  margin-top: 86px;
+  position: fixed;
+}
+/* line 117, ../compass/sass/styles.scss */
 body .greeting {
   margin: 25%;
   width: 100%;
 }
-/* line 117, ../compass/sass/styles.scss */
-body .animate-me {
-  transition: all 2s linear;
+/* line 121, ../compass/sass/styles.scss */
+body .adjust-me {
+  margin: auto;
 }
-/* line 119, ../compass/sass/styles.scss */
-body .animate-me.ng-enter {
-  left: -200px;
-}
-/* line 122, ../compass/sass/styles.scss */
-body .animate-me.ng-leave {
-  left: 200px;
-}
-/* line 126, ../compass/sass/styles.scss */
+/* line 125, ../compass/sass/styles.scss */
 body .tweet-buffer {
   margin-bottom: 18px;
 }
-/* line 129, ../compass/sass/styles.scss */
+/* line 128, ../compass/sass/styles.scss */
 body .tweet-wrapper {
   background-color: #eee;
   border: 1px solid #e3e3e3;
   padding: 20px;
   border-radius: 6px;
 }
-/* line 134, ../compass/sass/styles.scss */
+/* line 133, ../compass/sass/styles.scss */
 body .tweet-wrapper img {
   border-radius: 25%;
 }
-/* line 138, ../compass/sass/styles.scss */
+/* line 137, ../compass/sass/styles.scss */
 body .tweet-text {
   margin-top: 10px;
   font-size: 18px;
 }
-/* line 142, ../compass/sass/styles.scss */
+/* line 141, ../compass/sass/styles.scss */
 body .username-text {
   margin-left: 5px;
 }

@@ -110,19 +110,18 @@ body{
 		margin: 86px 10px 0px 10px;
 		text-align: center;
 	}
+	.side-wrapper{
+		margin-top: 86px;
+		position: fixed;
+	}
 	.greeting{
 		margin: 25%;
 		width: 100%;
 	}
-	.animate-me{
-		transition: all 2s linear;
-		&.ng-enter{
-			left: -200px;
-		}
-		&.ng-leave{
-			left: 200px;
-		}
+	.adjust-me{
+		margin: auto;
 	}
+
 	.tweet-buffer{
 		margin-bottom: 18px;
 	}

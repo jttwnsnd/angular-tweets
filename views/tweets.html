@@ -25,29 +25,36 @@
 		</div> 
 	</nav> -->
 	<div class="container-fluid" >
-		<div class="wrapper">
-			<div class="row">
-				<div class="col-md-3">
+		<div class="row wrapper">
+			<div class="col-lg-3">
+				<div class="row">
 					<div class="col-md-3 white fixed current text-center theShadow">
 						<h4>Current Search</h4>
-						<div class="col-md-12"><span><h5>'{{searching}}'</h5></span></div>
-					</div>
-				</div>
-				<div class="col-md-6 wrapper animate-me">
-					<div class="tweet-wrapper tweet-buffer republican theShadow" ng-repeat='tweet in tweets'>
-						<div class="tweet-wrapper white theShadow">
-							<img class="theShadow" ng-src="{{tweet.user.profile_image_url}}"><span class="username-text">{{tweet.user.screen_name}}</span>
-							<p class="tweet-text">{{tweet.text}}</p><br />
-							<span>{{tweet.created_at}}</span>
+						<div class="row">
+							<div class="col-md-12"><span><h5>'{{searching}}'</h5></span></div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
-					<div class="col-md-3 white fixed-right current text-center theShadow">
-						<h4>Recent Searches</h4>
-						<div class="col-md-12" ng-repeat="search in lookup track by $index"><span><h5>'{{search}}'<span><a href="" ng-click="removeItem($index)">x</a></span></h5></span></div>
+			</div>
+			<div class="col-lg-6 wrapper">
+				<div class="tweet-wrapper tweet-buffer republican theShadow" ng-repeat='tweet in tweets'>
+					<div class="tweet-wrapper white theShadow">
+						<img class="theShadow" ng-src="{{tweet.user.profile_image_url}}"><span class="username-text">{{tweet.user.screen_name}}</span>
+						<p class="tweet-text">{{tweet.text}}</p><br />
+						<span>{{tweet.created_at}}</span>
 					</div>
 				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="row">
+					<div class="col-md-3 white fixed-right current text-center theShadow">
+						<h4>Recent Searches</h4>
+						<div class="row">
+							<div class="col-md-12" ng-repeat="search in lookup track by $index"><span><h5>'{{search}}'<span><a href="" ng-click="removeItem($index)">x</a></span></h5></span></div>
+						</div>
+					</div>
+				</div>
+				
 			</div>
 		</div>
 	</div>
