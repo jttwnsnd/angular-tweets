@@ -7,7 +7,7 @@ tweetApp.controller('homeController', function($scope, $http, $location, $routeP
 		$scope.clinton = '';
 		$scope.home = '';
 		$scope.search = '';
-		console.log("the path changed it\'s now " + newPath);
+		console.log("the path changed. it's now " + newPath);
 		if(newPath == '/trump'){
 			$scope.trump = 'active';
 		}else if(newPath == '/clinton'){

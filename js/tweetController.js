@@ -20,33 +20,14 @@ tweetApp.controller('tweetController', function($scope, $http, $location, $route
 		function successFunction(tweetData){
 			$scope.tweets = tweetData.data.statuses;
 			recentSearch.unshift(searchTerm);
+			if(recentSearch.length > 5){
+				var howMany = recentSearch.length - 4;
+				recentSearch.splice(recentSearch.length - 1, howMany);			
+			}
 		},function failureFunction(tweetData){
-			console.log(tweetData);
 		}
 	)
-	$scope.userSearch = function(){
-		if($scope.userInput){
-			var searchTerm = $scope.userInput;
-		}else{
-			if($routeParams.searchTerm){
-				var searchTerm = $routeParams.searchTerm;
-			}else{
-				var searchTerm = 'trump';
-			}
-		}
-		$scope.searching = searchTerm;
-		$http({
-		method: 'GET',
-		url: 'http://digitalcrafts.com/students/twitter/hashtag.php?user=true&hash=' + searchTerm
-	}).then(
-		function successFunction(tweetData){
-			$scope.tweets = tweetData.data.statuses;
-			recentSearch.unshift(searchTerm);
-		},function failureFunction(tweetData){
-			console.log(tweetData);
-			}
-		)
-	}
+	
 	$scope.removeItem = function(index){
 		recentSearch.splice(index, 1);
 	}

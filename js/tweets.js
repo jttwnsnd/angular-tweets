@@ -19,10 +19,6 @@ Tweet.prototype.getTimeSince = function(theDate){
 
 Tweet.prototype.company = 'Twitter';
 var recentSearch = [];
-if(recentSearch.length > 5){
-	var howMany = recentSearch.length - 4;
-	recentSearch.splice(recentSearch.length - 1, howMany);			
-}
 // var tweet1 = new Tweet('Title Stuff', 'dc4life', 'aflsjfslfjslfjlsfjslkjf', '1471351423825', 'https://pbs.twimg.com/profile_banners/30318720/1398951622/1500x500');
 // var tweet2 = new Tweet('Title Stuff', 'dc4life', 'afkklofdolol', '1471351023825', 'https://pbs.twimg.com/profile_banners/30318720/1398951622/1500x500');
 // console.log(tweet1.getTimeSince(Date.now()));
